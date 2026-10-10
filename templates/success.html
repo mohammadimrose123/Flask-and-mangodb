@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Submission Successful</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="container">
+    <section class="card success-card">
+      <div class="success-icon" aria-hidden="true">✓</div>
+      <h1>Data submitted successfully</h1>
+      <p>Your form data was saved to MongoDB Atlas.</p>
+      <a class="button-link" href="{{ url_for('index') }}">Back to form</a>
+    </section>
+  </main>
+</body>
+</html>
